@@ -3,10 +3,7 @@
       <mat-icon (click)="this.sideNav.open()"  *ngIf="!sideNav?.opened">menu</mat-icon>
       <mat-icon (click)="this.sideNav.close()" *ngIf="sideNav?.opened">close</mat-icon>
   </button>
-
-
     <span>LP News</span>
-    <span class="example-spacer"></span>
 </mat-toolbar>
 
 
@@ -18,7 +15,7 @@
 
         <ng-container *ngFor="let source of sources">
             <button (click)="searchSource(source)" mat-button class="menu-button">
-            <mat-icon>home</mat-icon>
+            <mat-icon>event_note</mat-icon>
             <span>{{source.name}}</span>
         </button>
         </ng-container>
